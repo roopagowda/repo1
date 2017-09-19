@@ -1,0 +1,11 @@
+<project name="test" default="build">
+<description>
+        Building gitlabcode
+  </description>
+
+<tstamp>
+      <format property="Time" pattern="yyyy-MM-dd-HH-mm"  locale="en,IN" />
+  </tstamp>
+	<target name="build"><zip destfile="gitlabcode-${Time}.zip" basedir="*"/></target>
+
+</project>
